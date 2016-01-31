@@ -128,7 +128,7 @@ ndat <- dat[,c(3, 5, 6:ncol(dat))]
 
 # Rename some assays so they can be merged
 names(ndat)[names(ndat) == 'pf NCC x10e6/mL'] <- 'NCC x10e6/mL'
-names(ndat)[names(ndat) == 'pf CD34/µL'] <- 'CD34/µL'
+names(ndat)[names(ndat) == 'pf CD34/ÂµL'] <- 'CD34/ÂµL'
 
 # Just take assays of interest. Exclude CD3, all pf.CFC, and non-total-CFC
 ndat <- ndat[ ,c(1:3, 5, 13:24, 26:29, 31:34, 36)]
